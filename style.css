@@ -1,0 +1,81 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+}
+
+.container>.label {
+    flex-grow: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10em;
+    font-weight: bold;
+}
+
+.container>.info {
+    flex-grow: 2;
+}
+
+div.info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+div.info>* {
+    flex-grow: 1;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid seagreen;
+    margin: 10px;
+    flex-basis: 20%;
+    border-radius: 6px;
+    box-shadow: 0 0 2px green;
+    font-weight: bold;
+}
+
+div.info>*>.header {
+    display: flex;
+    justify-content: center;
+    padding: 0.5em;
+    font-size: 1.2em;
+    border-bottom: 1px dashed seagreen;
+}
+
+div.info>*>.value {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+div.info>.key {
+    color: orange;
+}
+
+div.info>.which {
+    color: lime;
+}
+
+div.info>.keyCode {
+    color: deepskyblue;
+}
+
+div.info>.code {
+    color: yellow;
+}
